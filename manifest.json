@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Notion Prettier",
+    "name": "Notion Card",
     "version": "1.0",
-    "description": "Change the background of Notion pages",
+    "description": "Notion Card is a Chrome extension that converts Notion content into card images, perfect for publishing online.",
     "permissions": [
       "activeTab",
       "scripting"
@@ -12,11 +12,7 @@
     },
     "action": {
       "default_popup": "popup.html",
-      "default_icon": {
-        "16": "icon.png",
-        "48": "icon.png",
-        "128": "icon.png"
-      }
+      "default_icon": "logox1024.png"
     }
   }
   

@@ -4,19 +4,54 @@
   <title>Change Notion Background</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f9;
+    }
+    .container {
+      text-align: center;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
       width: 200px;
-      padding: 10px;
+    }
+    h3 {
+      margin-bottom: 18px;
+      color: #333;
+    }
+    div {
+      margin-bottom: 18px;
+      color: #333;
     }
     button {
-      width: 100%;
-      padding: 10px;
-      margin-top: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 15px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
     }
   </style>
 </head>
 <body>
-  <h3>Notion Background Changer</h3>
-  <button id="changeBackground">Change Background</button>
+  <div class="container">
+    <h2>Notion Card</h2>
+    <div>If there are no changes, please refresh the webpage.</div>
+    <button id="changeBackground">Make Card</button>
+  </div>
   <script src="popup.js"></script>
 </body>
 </html>

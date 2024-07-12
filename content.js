@@ -1,5 +1,5 @@
 var NotionCard_notionContent = document.querySelector('.notion-page-content');
-console.log(NotionCard_notionContent);
+// console.log(NotionCard_notionContent);
 if (NotionCard_notionContent) {
   NotionCard_notionContent.style.backgroundColor = 'rgba(255, 255, 255, 0.4)';
   NotionCard_notionContent.style.boxShadow = '4px 4px 50px -20px #00000080';

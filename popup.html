@@ -18,40 +18,87 @@
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       padding: 20px;
-      width: 200px;
+      width: 250px;
     }
-    h3 {
+    .title-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin-bottom: 18px;
+    }
+    .title {
+      font-size: 24px;
+      font-weight: bold;
       color: #333;
+      margin-right: 10px;
     }
-    div {
-      margin-bottom: 18px;
+    .badge {
+      display: inline-block;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+    .btn-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      justify-items: center;
+    }
+    .divider {
+      margin: 20px 0;
+      border-top: 1px solid #ccc;
+    }
+    .message {
       color: #333;
     }
     button {
-      background-color: #4CAF50;
-      color: white;
+      width: 60px;
+      height: 60px;
       border: none;
-      border-radius: 5px;
-      padding: 15px 20px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      transition: background-color 0.3s ease;
+      border-radius: 50%;
+      transition: transform 0.3s ease, background-image 0.3s ease;
       cursor: pointer;
     }
     button:hover {
-      background-color: #45a049;
+      transform: scale(1.05);
     }
+    #style1 { background-image: linear-gradient(320deg, #dfe9f3 0%, white 100%); }
+    #style2 {background-image: linear-gradient(-225deg, #D4FFEC 0%, #57F2CC 48%, #4596FB 100%);}
+    #style3 { background-image: linear-gradient(120deg, #a18cd1 0%, #fbc2eb 100%); }
+    #style4 { background-image: linear-gradient(100deg, rgb(204, 251, 252), rgb(197, 234, 254), rgb(189, 211, 255)); }
+    #style5 { background-image: linear-gradient(105deg, rgb(245, 159, 156), rgb(69, 165, 215));}
+    #style6 { background-image: linear-gradient(200deg, #30cfd0 0%, #330867 100%); }
+    #style7 { background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%); }
+    #style8 { background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); }
+    #style9 { background-image: linear-gradient(120deg, #f43b47 0%, #453a94 100%); }
   </style>
 </head>
 <body>
   <div class="container">
-    <h2>Notion Card</h2>
-    <div>If there are no changes, please refresh the webpage.</div>
-    <button id="changeBackground">Make Card</button>
+    <div class="title-container">
+      <span class="title">Notion Card</span>
+      <span class="badge">Free</span>
+    </div>
+    <div class="btn-container">
+      <button id="style1"></button>
+      <button id="style2"></button>
+      <button id="style3"></button>
+      <button id="style4"></button>
+      <button id="style5"></button>
+      <button id="style6"></button>
+      <button id="style7"></button>
+      <button id="style8"></button>
+      <button id="style9"></button>
+    </div>
+    <div class="divider"></div>
+    <div class="message">If there are no changes, please refresh the webpage.</div>
   </div>
   <script src="popup.js"></script>
 </body>
 </html>
+
+
+   

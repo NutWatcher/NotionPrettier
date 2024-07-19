@@ -30,7 +30,9 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 
         var NotionCard_parentElement = NotionCard_notionContent.parentElement;
         if (NotionCard_parentElement) {
+            NotionCard_parentElement.style.marginTop = "58px";
             NotionCard_parentElement.style.padding = "58px";
+            NotionCard_parentElement.style.paddingBottom = "28px";
             NotionCard_parentElement.style.backgroundImage =
                 "linear-gradient(100deg, rgb(204, 251, 252), rgb(197, 234, 254), rgb(189, 211, 255))";
         } else {
@@ -38,6 +40,28 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         }
         NotionCard_parentElement.style.backgroundImage =
             Notion_Card_Style[style];
+
+        var NotionCard_style = document.createElement('style');
+        NotionCard_style.setAttribute('type', 'text/css');
+        // 添加伪元素的CSS规则
+        var NotionCard_css = `
+            .layout-content::after {
+                    content: "Notion Card";
+                    padding-left: 8px;
+                    font-size: 24px;
+                    color: rgba(255, 255, 255, 0.6);
+                    display: block;
+                    height: 30px;
+            }
+        `;
+        if (NotionCard_style.styleSheet) {
+            NotionCard_style.styleSheet.cssText = NotionCard_css;
+        } else {
+            NotionCard_style.appendChild(document.createTextNode(NotionCard_css));
+        }
+        
+        // 将样式元素添加到head
+        document.head.appendChild(NotionCard_style);
     } else {
         alert(
             "Notion Card:  Unable to locate content in the current page of Notion document, please try refreshing."

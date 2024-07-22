@@ -1,3 +1,7 @@
+document.getElementById("notionCardLink").onclick = function () {
+    chrome.tabs.create({ url: "https://notioncard.com" });
+};
+
 document
     .getElementById("style1")
     .addEventListener("click", () => applyStyle("style1"));

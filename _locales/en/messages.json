@@ -1,0 +1,11 @@
+{
+    "notionCardTitle": {
+        "message": "Notion Card"
+    },
+    "refreshMessage": {
+        "message": "If there are no changes, please refresh the webpage."
+    },
+    "usageMessage": {
+        "message": "You can easily save card images using the scroll screenshot plugin!"
+    }
+}

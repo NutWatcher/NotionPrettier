@@ -1,7 +1,8 @@
 {
     "manifest_version": 3,
     "name": "Notion Card",
-    "version": "1.3.0",
+    "version": "1.4.0",
+    "default_locale": "en",
     "description": "Notion Card is a Chrome extension that converts Notion content into card images, perfect for publishing online.",
     "permissions": [
       "activeTab",

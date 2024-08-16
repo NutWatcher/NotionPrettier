@@ -1,0 +1,11 @@
+{
+    "notionCardTitle": {
+        "message": "Notion Card"
+    },
+    "refreshMessage": {
+        "message": "如果没有变化，请刷新网页。"
+    },
+    "usageMessage": {
+        "message": "您可以使用滚动截图插件轻松保存卡片图片哦！"
+    }
+}

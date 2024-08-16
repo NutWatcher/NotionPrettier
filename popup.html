@@ -58,7 +58,20 @@
                 border-top: 1px solid #ccc;
             }
             .message {
-                color: #333;
+                color: #4a4a4a; /* 较深的灰色字体，更容易阅读 */
+                font-size: 14px; /* 增加字体大小 */
+                background-color: #e8f5e9; /* 浅绿色背景，更加友好 */
+                padding: 10px; /* 增加内边距 */
+                border-radius: 6px; /* 圆角 */
+                border: 1px solid #c8e6c9; /* 边框颜色与背景颜色协调 */
+                margin-bottom: 10px; /* 增加消息之间的间距 */
+                display: flex;
+                align-items: center;
+            }
+            .message-icon {
+                margin-right: 8px;
+                font-size: 16px; /* 图标大小 */
+                color: #66bb6a; /* 图标颜色 */
             }
             button {
                 width: 60px;
@@ -158,7 +171,17 @@
             </div>
             <div class="divider"></div>
             <div class="message">
-                If there are no changes, please refresh the webpage.
+                <span class="message-icon">&#128190;</span>
+                <span class="usageMessage"
+                    >You can easily save card images using the scroll screenshot
+                    plugin!</span
+                >
+            </div>
+            <div class="message">
+                <span class="message-icon">&#128260;</span>
+                <span class="refreshMessage"
+                    >If there are no changes, please refresh the webpage.</span
+                >
             </div>
         </div>
         <script src="popup.js"></script>

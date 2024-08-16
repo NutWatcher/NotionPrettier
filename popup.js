@@ -2,6 +2,13 @@ document.getElementById("notionCardLink").onclick = function () {
     chrome.tabs.create({ url: "https://notioncard.com" });
 };
 
+document.getElementById("notionCardLink").textContent =
+    chrome.i18n.getMessage("notionCardTitle");
+document.querySelector(".refreshMessage").textContent =
+    chrome.i18n.getMessage("refreshMessage");
+document.querySelector(".usageMessage").textContent =
+    chrome.i18n.getMessage("usageMessage");
+
 document
     .getElementById("style1")
     .addEventListener("click", () => applyStyle("style1"));

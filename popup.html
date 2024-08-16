@@ -2,6 +2,11 @@
 <html>
     <head>
         <title>Change Notion Background</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -83,6 +88,30 @@
             }
             button:hover {
                 transform: scale(1.05);
+            }
+            .footer-links {
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+                gap: 30px; /* Space between the two links */
+                align-items: center;
+            }
+            .footer-links a {
+                text-decoration: none;
+                color: #4caf50;
+                font-size: 16px;
+                transition: color 0.3s ease;
+            }
+            .footer-links a:hover {
+                color: #2e7d32;
+            }
+            .footer-links .icon img {
+                width: 32px; /* Set maximum width */
+                height: 32px; /* Set maximum height */
+                transition: transform 0.3s ease;
+            }
+            .footer-links .icon img:hover {
+                transform: scale(1.1);
             }
             #style1 {
                 background-image: linear-gradient(
@@ -182,6 +211,18 @@
                 <span class="refreshMessage"
                     >If there are no changes, please refresh the webpage.</span
                 >
+            </div>
+            <div class="footer-links">
+                <a
+                    class="feedbackMessage"
+                    href="https://noiton-card.canny.io/feature-requests"
+                    target="_blank"
+                    >Feedback</a
+                >
+                <a href="https://x.com/boluodx" target="_blank" class="icon">
+                    <img src="x-icon.png" alt="X Icon" />
+                    <!-- Replace 'x-icon.png' with your file name -->
+                </a>
             </div>
         </div>
         <script src="popup.js"></script>

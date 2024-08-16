@@ -7,5 +7,8 @@
     },
     "usageMessage": {
         "message": "您可以使用滚动截图插件轻松保存卡片图片哦！"
+    },
+    "feedbackMessage": {
+        "message": "反馈"
     }
 }

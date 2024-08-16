@@ -8,6 +8,8 @@ document.querySelector(".refreshMessage").textContent =
     chrome.i18n.getMessage("refreshMessage");
 document.querySelector(".usageMessage").textContent =
     chrome.i18n.getMessage("usageMessage");
+document.querySelector(".feedbackMessage").textContent =
+    chrome.i18n.getMessage("feedbackMessage");
 
 document
     .getElementById("style1")
